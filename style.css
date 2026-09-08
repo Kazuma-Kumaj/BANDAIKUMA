@@ -1,0 +1,85 @@
+/* 1. Trang trí toàn bộ nền trang web và font chữ */
+body {
+    background-color: #f0f2f5; /* Màu nền xám nhạt */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font chữ dễ nhìn */
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+    min-height: 100vh;       /* Chiều cao phủ kín màn hình */
+    margin: 0;
+}
+
+/* 2. Trang trí khung chứa nội dung (.card) */
+.card {
+    background-color: #ffffff; /* Nền trắng */
+    padding: 30px;
+    border-radius: 12px;       /* Bo tròn góc khung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ */
+    text-align: center;
+    max-width: 400px;
+}
+
+/* 3. Trang trí tiêu đề H1 */
+h1 {
+    color: #1a73e8; /* Màu xanh ngọc / tím bích */
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* 4. Trang trí đoạn văn P */
+p {
+    color: #5f6368; /* Màu xám đậm giúp dễ đọc */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* 5. Trang trí nút bấm (Button) */
+button {
+    background-color: #1a73e8; /* Màu nền nút bấm */
+    color: white;              /* Màu chữ trắng */
+    border: none;              /* Xóa viền đen mặc định */
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;        /* Bo góc nút */
+    cursor: pointer;           /* Đổi con trỏ chuột thành hình bàn tay */
+    transition: background-color 0.3s ease; /* Hiệu ứng mượt khi di chuột */
+}
+
+/* Hiệu ứng khi rê chuột vào nút bấm (Hover) */
+button:hover {
+    background-color: #1557b0; /* Màu đậm hơn khi di chuột qua */
+}
+/* Thêm class chế độ Tối cho body */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Kiểu dáng khung card khi ở chế độ Tối */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode h1 {
+    color: #90caf9;
+}
+
+/* Nút phụ (Secondary button) */
+.btn-secondary {
+    background-color: #6c757d;
+    margin-left: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+/* Trang trí nút Reset màu đỏ */
+.btn-danger {
+    background-color: #dc3545;
+    margin-left: 8px;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+}
